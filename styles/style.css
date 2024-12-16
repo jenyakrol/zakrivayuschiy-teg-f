@@ -220,6 +220,7 @@
 }
 
 .save-button-icon {
+  fill: var(--button-text-color);
   color: var(--button-text-color);
   inline-size: 21px;
 }
