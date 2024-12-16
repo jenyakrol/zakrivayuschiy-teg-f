@@ -244,9 +244,8 @@
 }
 
 .popup-icon {
-  color: white;
+  color: black;
   inline-size: 39px;
-  mix-blend-mode: difference;
 }
 
 .popup-text {
@@ -257,10 +256,6 @@
 .popup-button {
   padding: 10px;
   inline-size: clamp(257px, 25vw, 293px);
-}
-
-.floppy-image {
-  display: none;
 }
 
 @media (width <= 375px) {
