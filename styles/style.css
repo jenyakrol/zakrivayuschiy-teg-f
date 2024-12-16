@@ -14,7 +14,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 100px;
+  margin-block-end: 100px;
   font-family: var(--main-font);
   background-image: var(--background-pattern);
   background-position: center;
@@ -35,6 +35,7 @@
   align-items: center;
   gap: 20px;
   margin-top: 100px;
+  margin-block-end: 100px;
   border: 2px solid #000;
   padding: 128px 0;
   font-family: var(--accent-font);
@@ -56,14 +57,6 @@
   flex-direction: column;
   align-items: center;
   gap: 50px;
-  margin-block-end: 100px;
-}
-
-.content-list {
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-  inline-size: 100%;
 }
 
 .card {
@@ -117,7 +110,7 @@
   flex-direction: column;
   gap: 27px;
   font-size: 18px;
-  text-shadow: 1px 1px 2px #2e2e2e;
+  line-height: 21px;
 }
 
 .card-buttons-container {
@@ -137,6 +130,7 @@
   padding: 0;
   background: none;
   transition: border 0.3s ease;
+  transform: scale(1.2) translateY(5%);
   inline-size: 38px;
   block-size: 38px;
 }
@@ -151,7 +145,8 @@
 }
 
 .card__like-button {
-  padding: 10px 35px;
+  padding: 10px ;
+  inline-size: 130px;    
 }
 
 .button {
@@ -189,31 +184,31 @@
   mix-blend-mode: difference;
 }
 
-.content-list-item:nth-child(1) .card-image {
+.sepia-filter {
   filter: sepia(50%);
 }
 
-.content-list-item:nth-child(2) .card-image {
+.grayscale-filter {
   filter: grayscale(75%);
 }
 
-.content-list-item:nth-child(3) .card-image {
+.saturate-filter {
   filter: saturate(400%);
 }
 
-.content-list-item:nth-child(4) .card-image {
+.hue-rotate-invert-filter {
   filter: hue-rotate(180deg) invert(100%);
 }
 
-.content-list-item:nth-child(5) .card-image {
+.low-brightness-filter {
   filter: brightness(85%);
 }
 
-.content-list-item:nth-child(6) .card-image {
+.blur-filter {
   filter: blur(10px);
 }
 
-.content-list-item:nth-child(7) .card-image {
+.low-saturate-filter {
   filter: saturate(80%);
 }
 
@@ -233,7 +228,7 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
-  padding: 35px 27px;
+  padding: 27px 27px;
   font-family: var(--accent-font);
   font-size: 14px;
 }
@@ -249,11 +244,18 @@
 }
 
 .popup-icon {
+  color: white;
   inline-size: 39px;
+  mix-blend-mode: difference;
+}
+
+.popup-text {
+  line-height: 150%;
+  text-transform: uppercase;
 }
 
 .popup-button {
-  padding: 12.5px;
+  padding: 10px;
   inline-size: clamp(257px, 25vw, 293px);
 }
 

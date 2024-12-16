@@ -1,6 +1,6 @@
 <svg viewBox="0 0 21 21" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 <symbol id="floppy" fill="currentColor">
-  <rect x="0.5" y="0.5" width="3" height="3" fill="white"/>
+  <rect x="0.5" y="0.5" width="3" height="3" fill="black"/>
   <rect x="0.5" y="3.5" width="3" height="3" />
   <rect x="0.5" y="6.5" width="3" height="3" />
   <rect x="0.5" y="9.5" width="3" height="3" />
