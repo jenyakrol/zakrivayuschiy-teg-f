@@ -9,3 +9,82 @@
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
 */
+
+.card__icon-button .core {
+  fill: transparent;
+  transition: 0.3s 0.03s;
+}
+
+.card__icon-button .main-body {
+  fill: transparent;
+  transition: 0.3s;
+}
+
+.card__icon-button .contour {
+  fill: var(--heart-contour-color);
+  transition: 0.1s linear;
+}
+
+.card__icon-button:hover .core {
+  fill: var(--heart-contour-color);
+  transition: 0.3s;
+}
+
+.card__icon-button:hover .main-body {
+  fill: var(--heart-contour-color);
+  transition: 0.3s 0.05s;
+}
+
+.card__icon-button:active .core {
+  fill: var(--heart-fill-color);
+  transition: 0.3s;
+}
+
+.card__icon-button:active .main-body {
+  fill: var(--heart-fill-color);
+  transition: 0.3s 0.05s;
+}
+
+.like-icon.is-liked .core {
+  fill: var(--heart-fill-color);
+  transition: 0.3s;
+}
+
+.like-icon.is-liked .main-body {
+  fill: var(--heart-fill-color);
+  transition: 0.3s 0.05s;
+}
+
+.like-icon.is-liked .contour {
+  fill: var(--heart-fill-color);
+  transition: 0.3s 0.06s;
+}
+
+.like-icon.is-liked .heart {
+  animation: heart-beat 0.3s 0.1s ease-in;
+}
+
+.like-icon.is-liked .sparks {
+  animation: sparks-blast 0.3s 0.3s ease-in;
+}
+
+@keyframes heart-beat {
+  50% {
+    scale: 1.25;
+    translate: -12.5% -12.5%;
+  }
+
+  to {
+    scale: 1;
+  }
+}
+
+@keyframes sparks-blast {
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
