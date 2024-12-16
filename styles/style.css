@@ -26,7 +26,7 @@
 }
 
 .main-width {
-  inline-size: var(--main-inline-size);  
+  inline-size: var(--main-inline-size);
 }
 
 .header {
@@ -150,12 +150,12 @@
   opacity: 0;
 }
 
-.card__like-button {  
-  padding: 10px 35px;  
+.card__like-button {
+  padding: 10px 35px;
 }
 
 .button {
-  position: relative;  
+  position: relative;
   border: 2px solid #000;
   font-family: var(--accent-font);
   font-size: 14px;
@@ -166,7 +166,6 @@
 .button::after {
   content: '';
   position: absolute;
-  inset: 0;
   inset: 0;
   background-color: #000;
   transition: scale 0.5s ease-in-out;
@@ -231,7 +230,6 @@
 }
 
 .popup[open] {
-  display: none;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -254,7 +252,7 @@
   inline-size: 39px;
 }
 
-.popup-button {  
+.popup-button {
   padding: 12.5px;
   inline-size: clamp(257px, 25vw, 293px);
 }
@@ -290,7 +288,7 @@
     padding: 27px 40px;
   }
 
-  .popup-button { 
+  .popup-button {
     padding: 10px;
   }
 }
