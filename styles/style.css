@@ -205,7 +205,7 @@
 }
 
 .blur-filter {
-  filter: blur(10px);
+  filter: blur(12px);
 }
 
 .low-saturate-filter {
